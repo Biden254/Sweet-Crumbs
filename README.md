@@ -246,4 +246,4 @@ This project is licensed under the MIT License.
 For support and questions:
 - Create an issue in the repository
 - Contact the development team
-- Use the built-in chatbot on the website
+
