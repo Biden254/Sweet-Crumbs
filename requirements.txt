@@ -1,0 +1,26 @@
+# Core Django
+Django==5.0.7
+
+# Static files serving
+whitenoise==6.6.0
+
+# Image handling
+Pillow==10.4.0
+
+# CSS Framework
+django-tailwind==3.6.0
+
+# Authentication
+django-allauth==0.63.6
+
+# Environment variables
+python-dotenv==1.0.1
+
+# AI/Chatbot (optional)
+openai==1.51.0
+
+# HTTP requests
+requests==2.32.3
+
+# Database (optional for PostgreSQL)
+# psycopg2-binary==2.9.9

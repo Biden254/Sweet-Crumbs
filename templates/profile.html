@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-semibold text-pink-700 mb-6">My Profile</h1>
+  <div class="bg-white rounded-xl shadow p-6 mb-6">
+    <div class="font-medium">{% firstof request.user.get_full_name request.user.email %}</div>
+    <div class="text-slate-500">{{ request.user.email }}</div>
+    <div class="mt-3"><a class="text-pink-700 underline" href="/accounts/logout/">Logout</a></div>
+  </div>
+  <h2 class="text-xl font-semibold mb-3">Past Orders</h2>
+  <div class="space-y-3">
+    {% for o in orders %}
+    <div class="bg-white rounded-lg shadow p-4 flex items-center justify-between">
+      <div>
+        <div class="font-medium">Order {{ o.order_id }}</div>
+        <div class="text-slate-500">{{ o.get_status_display }} • {{ o.created_at }}</div>
+      </div>
+      <div class="font-medium">${{ o.total_price }}</div>
+    </div>
+    {% empty %}
+    <div>No orders yet.</div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+

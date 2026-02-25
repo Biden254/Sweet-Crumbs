@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="relative">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-semibold text-pink-700 mb-4">Sweet Crumbs Bakery</h1>
+      <p class="text-slate-600 mb-6">Artisanal cupcakes, cookies, and custom cakes baked fresh daily with love.</p>
+      <div class="flex gap-3">
+        <a href="/shop/" class="bg-pink-600 text-white px-5 py-3 rounded-lg hover:bg-pink-700">Shop Now</a>
+        <a href="/contact/" class="px-5 py-3 rounded-lg border border-pink-600 text-pink-700 hover:bg-pink-50">Contact Us</a>
+      </div>
+    </div>
+    <div>
+      <img class="rounded-xl shadow-lg w-full h-96 object-cover" src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJha2VyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Sweet Crumbs Bakery Display"/>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-6">Shop by Category</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <a href="/shop?c=cupcakes" class="group rounded-xl overflow-hidden shadow bg-white">
+        <img class="h-40 w-full object-cover group-hover:scale-[1.02] transition" src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VwY2FrZXN8ZW58MHx8MHx8fDA%3D" alt="Artisanal Cupcakes"/>
+        <div class="p-4">
+          <div class="text-pink-700 font-medium">Cupcakes</div>
+          <div class="text-slate-500 text-sm">Discover delicious picks</div>
+        </div>
+      </a>
+      <a href="/shop?c=cookies" class="group rounded-xl overflow-hidden shadow bg-white">
+        <img class="h-40 w-full object-cover group-hover:scale-[1.02] transition" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va2llc3xlbnwwfHwwfHx8MA%3D%3D" alt="Fresh Baked Cookies"/>
+        <div class="p-4">
+          <div class="text-pink-700 font-medium">Cookies</div>
+          <div class="text-slate-500 text-sm">Discover delicious picks</div>
+        </div>
+      </a>
+      <a href="/shop?c=wedding" class="group rounded-xl overflow-hidden shadow bg-white">
+        <img class="h-40 w-full object-cover group-hover:scale-[1.02] transition" src="https://images.unsplash.com/photo-1604702433171-33756f3f3825?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2VkZGluZyUyMGNha2V8ZW58MHx8MHx8fDA%3D" alt="Elegant Wedding Cakes"/>
+        <div class="p-4">
+          <div class="text-pink-700 font-medium">Wedding Cakes</div>
+          <div class="text-slate-500 text-sm">Discover delicious picks</div>
+        </div>
+      </a>
+      <a href="/shop?c=birthday" class="group rounded-xl overflow-hidden shadow bg-white">
+        <img class="h-40 w-full object-cover group-hover:scale-[1.02] transition" src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXklMjBjYWtlfGVufDB8fDB8fHww" alt="Celebration Birthday Cakes"/>
+        <div class="p-4">
+          <div class="text-pink-700 font-medium">Birthday Cakes</div>
+          <div class="text-slate-500 text-sm">Discover delicious picks</div>
+        </div>
+      </a>
+      <a href="/shop?c=delivery" class="group rounded-xl overflow-hidden shadow bg-white">
+        <img class="h-40 w-full object-cover group-hover:scale-[1.02] transition" src="https://plus.unsplash.com/premium_photo-1664391971960-bbaf10a2e1bd?q=80&w=755&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fresh Cake Delivery"/>
+        <div class="p-4">
+          <div class="text-pink-700 font-medium">Cake Deliveries</div>
+          <div class="text-slate-500 text-sm">Discover delicious picks</div>
+        </div>
+      </a>
+      <a href="/shop?c=decorating" class="group rounded-xl overflow-hidden shadow bg-white">
+        <img class="h-40 w-full object-cover group-hover:scale-[1.02] transition" src="https://images.unsplash.com/photo-1611810797891-ac09c37a1f93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FrZSUyMGRlY29yYXRpb258ZW58MHx8MHx8fDA%3D" alt="Custom Cake Decorating"/>
+        <div class="p-4">
+          <div class="text-pink-700 font-medium">Cake Decorating</div>
+          <div class="text-slate-500 text-sm">Discover delicious picks</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="text-center text-slate-500 pb-10">Free delivery on orders over $50</div>
+  <div class="text-center pb-10"><a class="text-pink-700 underline" href="/orders/track/">Track your order</a></div>
+  
+</section>
+{% endblock %}
+
+
